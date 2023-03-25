@@ -6,6 +6,7 @@ serverless
 storybook-static
 .env*.local
 lefthook-local.yml
+package.lock
 
 # Logs
 logs

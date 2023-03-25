@@ -4,7 +4,6 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const port = 3300;
-const startFile = require("../bin/start");
 
 const basePath = path.join(__dirname, "../dist/statics");
 

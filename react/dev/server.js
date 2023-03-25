@@ -15,6 +15,4 @@ app.listen(port, () => {
   console.log(chalk.green('Compiled successfully!\n'));
   console.log(`Your bundles and other static assets are served from your ${chalk.bold('dev-server.')}\n`);
   console.log(`\t${chalk.bold('Local:')}\thttp://localhost:${port}/`);
-
-  startFile.startEntrySelector();
 })

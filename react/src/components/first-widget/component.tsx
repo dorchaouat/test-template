@@ -27,13 +27,13 @@ export class WeatherComponent extends React.Component {
     return (
       <div className={s.weatherWrapper}>
         <div className={s.weatherCard}>
-          {wixSettings?.showIcons && <div className={s.weatherIconSun}></div>}
-          <h1>{wixSettings?.tempUnits === 'Fahrenheit' ? '78º F' : '26º C'}</h1>
+          <div className={s.weatherIconSun}></div>
+          <h1>26º C</h1>
           <p>Day Time</p>
         </div>
         <div className={s.weatherCard}>
-          {wixSettings?.showIcons && <div className={s.weatherIconCloud}></div>}
-          <h1>{wixSettings?.tempUnits === 'Fahrenheit' ? '39º F' : '4º C'}</h1>
+          <div className={s.weatherIconCloud}></div>
+          <h1>4º C</h1>
           <p>Night Time</p>
         </div>
         <div className={s.weatherCard}>

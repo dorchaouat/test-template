@@ -1,5 +1,5 @@
 import reactToWebComponent from "react-to-webcomponent";
-import { WeatherComponent } from './Component';
+import { WeatherComponent } from './component';
 
 const React = require('react');
 const ReactDOM = require('react-dom');

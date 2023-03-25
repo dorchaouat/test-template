@@ -11,7 +11,7 @@
     "skipLibCheck": true
   },
   "include": [
-    "src/**/*.ts", "src/components/firstWidget/.settings.type.ts",
+    "src/**/*.ts", "src/components/first-widget/.settings.type.ts",
   ],
   "exclude": ["**/*.spec.ts"]
 }

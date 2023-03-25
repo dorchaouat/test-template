@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { IWixSettings } from './.settings.type';
-import { IWixconfig } from '../../types';
-import s from './Style.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import { IWixSettings } from "./.settings.type";
+import { IWixconfig } from "../../types";
+import s from "./Style.scss";
 
 export class WeatherComponent extends React.Component {
   static propTypes: {
@@ -16,8 +16,8 @@ export class WeatherComponent extends React.Component {
     super(props);
 
     this.state = {
-      wixConfig: JSON.parse(props?.wixconfig || '{}'),
-      wixSettings: JSON.parse(props?.wixsettings || '{}'),
+      wixConfig: JSON.parse(props?.wixconfig || "{}"),
+      wixSettings: JSON.parse(props?.wixsettings || "{}"),
     };
   }
 

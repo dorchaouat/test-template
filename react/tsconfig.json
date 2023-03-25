@@ -10,8 +10,6 @@
     "typeRoots": ["./node_modules/@types"],
     "skipLibCheck": true
   },
-  "include": [
-    "src/**/*.ts", "src/components/first-widget/.settings.type.ts",
-  ],
+  "include": ["src/**/*.ts", "src/components/first-widget/.settings.type.ts"],
   "exclude": ["**/*.spec.ts"]
 }

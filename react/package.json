@@ -10,6 +10,7 @@
   "scripts": {
     "start": "custom-element-flow start",
     "build": "custom-element-flow build",
+    "add:component": "custom-element-flow add",
     "lint": ":",
     "test": ":"
   },

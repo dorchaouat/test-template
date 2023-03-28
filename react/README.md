@@ -32,5 +32,5 @@ Adds another Custom Element Component to your app both in the Develoepr Center a
 
 ## Learn More
 
-You can read more about Cutom Element Component in Wix Apps here:
+You can read more about Custom Element Component in Wix Apps here:
 https://devforum.wix.com/kb/en/article/create-a-custom-element-and-app-settings-panel

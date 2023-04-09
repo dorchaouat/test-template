@@ -30,10 +30,19 @@
       "items": [
         {
           "textInputLabeled": {
-            "key": "fromCode",
+            "key": "title-default-key",
             "title": "Title",
             "placeholder": "",
             "value": "Gallery",
+            "description": ""
+          }
+        },
+        {
+          "textInputLabeled": {
+            "key": "button-1-default-key",
+            "title": "Button",
+            "placeholder": "",
+            "value": "Add to Cart",
             "description": ""
           }
         }
@@ -41,18 +50,129 @@
       "hidden": false
     },
     {
-      "label": "Design",
-      "items": [],
-      "hidden": false
-    },
-    {
       "label": "Layout",
-      "items": [],
+      "items": [
+        {
+          "radioButtonLabeled": {
+            "key": "layout-default-key",
+            "title": "Layout",
+            "value": "Box layout",
+            "options": [
+              "Box layout",
+              "Strip layout"
+            ],
+            "description": "",
+            "conditions": []
+          }
+        },
+        {
+          "toggleLabeled": {
+            "key": "stretch-default-key",
+            "title": "Stretch to full width",
+            "value": true,
+            "description": "",
+            "conditions": []
+          }
+        },
+        {
+          "sliderLabeled": {
+            "key": "column-default-key",
+            "title": "Spacing",
+            "size": "4",
+            "placeholder": "",
+            "description": "",
+            "minSize": 0,
+            "maxSize": 4
+          }
+        }
+      ],
       "hidden": false
     },
     {
       "label": "Display",
-      "items": [],
+      "items": [
+        {
+          "toggleLabeled": {
+            "key": "show-title-default-key",
+            "title": "Show title",
+            "value": true,
+            "description": "",
+            "conditions": []
+          }
+        },
+        {
+          "toggleLabeled": {
+            "key": "show-like-button-default-key",
+            "title": "Show like button",
+            "value": true,
+            "description": "",
+            "conditions": []
+          }
+        }
+      ],
+      "hidden": false
+    },
+    {
+      "label": "Design",
+      "items": [
+        {
+          "section": {
+            "label": "Button Design"
+          }
+        },
+        {
+          "colorSelectLabeled": {
+            "title": "Fill color & opacity",
+            "key": "fill-color-default-key",
+            "color": "",
+            "customColor": {
+              "value": "#E62214",
+              "opacity": "100"
+            },
+            "description": ""
+          }
+        },
+        {
+          "colorSelectLabeled": {
+            "title": "Border Color",
+            "key": "border-color-default-key",
+            "color": "",
+            "customColor": {
+              "value": "#E62214",
+              "opacity": ""
+            },
+            "description": ""
+          }
+        },
+        {
+          "sliderLabeled": {
+            "key": "border-width-default-key",
+            "title": "Border Width",
+            "size": "0",
+            "placeholder": "",
+            "description": "",
+            "minSize": 0,
+            "maxSize": 4
+          }
+        },
+        {
+          "textStyle": {
+            "key": "text-style-default-key",
+            "title": "Text style & color",
+            "description": "",
+            "defaultTextStyle": "PARAGRAPH",
+            "customColor": {
+              "value": "#FFB700",
+              "opacity": "0"
+            }
+          }
+        },
+        {
+          "resetButton": {
+            "label": "Reset Settings"
+          }
+        }
+      ],
       "hidden": false
     }
   ]

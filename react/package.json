@@ -11,6 +11,7 @@
     "start": "custom-element-flow start",
     "build": "custom-element-flow build",
     "add:component": "custom-element-flow add",
+    "update:settings": "custom-element-flow update",
     "lint": ":",
     "test": ":"
   },
@@ -32,7 +33,7 @@
     "cors": "^2.8.5",
     "css-loader": "^6.7.3",
     "css-modules-typescript-loader": "^4.0.1",
-    "custom-element-flow": "^1.0.66",
+    "custom-element-flow": "^1.0.95",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "inquirer": "8",

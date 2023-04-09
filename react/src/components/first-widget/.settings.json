@@ -1,0 +1,59 @@
+{
+  "settings": [
+    {
+      "label": "Main",
+      "items": [
+        {
+          "main": {
+            "items": [
+              {
+                "richTextWithIllustrationVertical": {
+                  "key": "richTextWithIllustrationVertical",
+                  "label": "App Name",
+                  "text": "This panel allows you to customize your app look and feel. Additional configuration can be found on the app's dashboard."
+                }
+              },
+              {
+                "dashboardButton": {
+                  "title": "",
+                  "label": "Manage App"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "hidden": false
+    },
+    {
+      "label": "Settings",
+      "items": [
+        {
+          "textInputLabeled": {
+            "key": "fromCode",
+            "title": "Title",
+            "placeholder": "",
+            "value": "Gallery",
+            "description": ""
+          }
+        }
+      ],
+      "hidden": false
+    },
+    {
+      "label": "Design",
+      "items": [],
+      "hidden": false
+    },
+    {
+      "label": "Layout",
+      "items": [],
+      "hidden": false
+    },
+    {
+      "label": "Display",
+      "items": [],
+      "hidden": false
+    }
+  ]
+}

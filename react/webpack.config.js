@@ -1,8 +1,23 @@
 const path = require("path");
+const glob = require('glob');
 
 module.exports = [
   {
     mode: "development",
+    entry: () => {
+      const entries = {};
+
+      glob.sync('./src/components/*/index.ts').forEach((file) => {
+        const name = path.dirname(file).split('/').pop();
+        entries[name] = './' + file;
+      });
+
+      return entries;
+    },
+    output: {
+      path: path.resolve(__dirname, "dist/statics/scripts"),
+      filename: "[name].bundle.js",
+    },
     module: {
       rules: [
         {
@@ -23,11 +38,6 @@ module.exports = [
     },
     resolve: {
       extensions: [".tsx", ".ts", ".js"],
-    },
-    entry: "./src/components/first-widget/index.ts",
-    output: {
-      path: path.resolve(__dirname, "dist/statics/scripts/first-widget"),
-      filename: "first-widget.bundle.js",
     },
     stats: "errors-only",
   },

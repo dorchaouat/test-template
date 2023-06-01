@@ -15,165 +15,66 @@
               },
               {
                 "dashboardButton": {
-                  "title": "",
-                  "label": "Manage App"
+                  "label": "Manage App",
+                  "key": "dashboard-button-default-key"
                 }
               }
             ]
           }
         }
-      ],
-      "hidden": false
+      ]
     },
     {
       "label": "Settings",
       "items": [
-        {
-          "textInputLabeled": {
-            "key": "title-default-key",
-            "title": "Title",
-            "placeholder": "",
-            "value": "Gallery",
-            "description": ""
-          }
-        },
-        {
-          "textInputLabeled": {
-            "key": "button-1-default-key",
-            "title": "Button",
-            "placeholder": "",
-            "value": "Add to Cart",
-            "description": ""
-          }
-        }
-      ],
-      "hidden": false
+      ]
     },
     {
       "label": "Layout",
-      "items": [
-        {
-          "radioButtonLabeled": {
-            "key": "layout-default-key",
-            "title": "Layout",
-            "value": "Box layout",
-            "options": [
-              "Box layout",
-              "Strip layout"
-            ],
-            "description": "",
-            "conditions": []
-          }
-        },
-        {
-          "toggleLabeled": {
-            "key": "stretch-default-key",
-            "title": "Stretch to full width",
-            "value": true,
-            "description": "",
-            "conditions": []
-          }
-        },
-        {
-          "sliderLabeled": {
-            "key": "column-default-key",
-            "title": "Spacing",
-            "size": "4",
-            "placeholder": "",
-            "description": "",
-            "minSize": 0,
-            "maxSize": 4
-          }
-        }
-      ],
-      "hidden": false
+      "items": []
     },
     {
       "label": "Display",
-      "items": [
-        {
-          "toggleLabeled": {
-            "key": "show-title-default-key",
-            "title": "Show title",
-            "value": true,
-            "description": "",
-            "conditions": []
-          }
-        },
-        {
-          "toggleLabeled": {
-            "key": "show-like-button-default-key",
-            "title": "Show like button",
-            "value": true,
-            "description": "",
-            "conditions": []
-          }
-        }
-      ],
-      "hidden": false
+      "items": []
     },
     {
       "label": "Design",
       "items": [
         {
-          "section": {
-            "label": "Button Design"
-          }
-        },
-        {
           "colorSelectLabeled": {
-            "title": "Fill color & opacity",
-            "key": "fill-color-default-key",
-            "color": "",
+            "title": "Primary Color",
             "customColor": {
               "value": "#E62214",
               "opacity": "100"
             },
-            "description": ""
+            "key": "primaryColor"
           }
         },
         {
           "colorSelectLabeled": {
-            "title": "Border Color",
-            "key": "border-color-default-key",
-            "color": "",
+            "title": "Secondary Color",
             "customColor": {
               "value": "#E62214",
-              "opacity": ""
+              "opacity": "100"
             },
-            "description": ""
+            "key": "secondaryColor"
           }
         },
         {
-          "sliderLabeled": {
-            "key": "border-width-default-key",
-            "title": "Border Width",
-            "size": "0",
-            "placeholder": "",
-            "description": "",
-            "minSize": 0,
-            "maxSize": 4
+          "toggleLabeled": {
+            "title": "Toggle",
+            "value": true,
+            "key": "toggle"
           }
         },
         {
-          "textStyle": {
-            "key": "text-style-default-key",
-            "title": "Text style & color",
-            "description": "",
-            "defaultTextStyle": "PARAGRAPH",
-            "customColor": {
-              "value": "#FFB700",
-              "opacity": "0"
-            }
-          }
-        },
-        {
-          "resetButton": {
-            "label": "Reset Settings"
+          "textInputLabeled": {
+            "title": "Input",
+            "value": "Add to Cart",
+            "key": "textInput"
           }
         }
-      ],
-      "hidden": false
+      ]
     }
   ]
 }

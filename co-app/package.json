@@ -8,10 +8,10 @@
     "email": "author@email.com"
   },
   "scripts": {
-    "start": "custom-element-flow start",
-    "build": "custom-element-flow build",
-    "add:component": "custom-element-flow add",
-    "update:settings": "custom-element-flow update",
+    "start": "co-app-scripts start",
+    "build": "co-app-scripts build",
+    "add:component": "co-app-scripts add",
+    "update:settings": "co-app-scripts update",
     "lint": ":",
     "test": ":"
   },
@@ -30,10 +30,10 @@
   "dependencies": {
     "axios": "^1.3.4",
     "chalk": "4",
+    "co-app-scripts": "^1.0.0",
     "cors": "^2.8.5",
     "css-loader": "^6.7.3",
     "css-modules-typescript-loader": "^4.0.1",
-    "custom-element-flow": "^1.0.96",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "inquirer": "8",

@@ -1,15 +1,40 @@
 {
   "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
     "esModuleInterop": true,
-    "jsx": "react",
-    "lib": ["es2017", "dom"],
-    "module": "commonjs",
-    "target": "es2018",
-    "outDir": "./dist/statics",
-    "types": ["jest", "node"],
+    "allowSyntheticDefaultImports": true,
+    
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    
+    /* Additional */
+    "types": ["jest", "node", "vite/client"],
     "typeRoots": ["./node_modules/@types"],
-    "skipLibCheck": true
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/components/first-widget/.settings.type.ts"],
-  "exclude": ["**/*.spec.ts"]
+  "include": [
+    "src/**/*.ts", 
+    "src/**/*.tsx", 
+    "vite.config.ts",
+    "src/components/first-widget/.settings.type.ts"
+  ],
+  "exclude": ["**/*.spec.ts", "node_modules", "dist"]
 }

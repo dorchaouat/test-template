@@ -2,17 +2,22 @@ import React from "react";
 import PropTypes from "prop-types";
 import { IWixSettings } from "./.settings.type";
 import { IWixconfig } from "../../types";
-import s from "./Style.scss";
+import s from "./Style.module.scss";
 
-export class WeatherComponent extends React.Component {
-  static propTypes: {
-    wixconfig: PropTypes.Validator<string>;
-    wixsettings: PropTypes.Validator<string>;
+interface WeatherComponentProps {
+  wixconfig: string;
+  wixsettings: string;
+}
+
+export class WeatherComponent extends React.Component<WeatherComponentProps> {
+  static propTypes = {
+    wixconfig: PropTypes.string.isRequired,
+    wixsettings: PropTypes.string.isRequired,
   };
 
   state: { wixConfig: IWixconfig; wixSettings: IWixSettings };
 
-  constructor(props) {
+  constructor(props: WeatherComponentProps) {
     super(props);
 
     this.state = {
@@ -45,7 +50,4 @@ export class WeatherComponent extends React.Component {
   }
 }
 
-WeatherComponent.propTypes = {
-  wixconfig: PropTypes.string.isRequired,
-  wixsettings: PropTypes.string.isRequired,
-};
+

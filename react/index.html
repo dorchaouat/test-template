@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Elements Development</title>
+  </head>
+  <body>
+    <h1>Custom Elements Development</h1>
+    <p>This page is for developing and testing custom elements.</p>
+    
+    <!-- Example usage of the first-widget custom element -->
+    <div style="margin: 20px 0;">
+      <h2>First Widget Example:</h2>
+      <first-widget 
+        wixconfig='{"some": "config"}' 
+        wixsettings='{"some": "settings"}'
+      ></first-widget>
+    </div>
+    
+    <!-- Load the custom element -->
+    <script type="module" src="/src/components/first-widget/index.ts"></script>
+  </body>
+</html>
